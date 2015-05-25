@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.dinnerapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication"
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowDinnerActivity"
+            android:label=""
+            android:parentActivityName=".ShowDinnerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.dinnerapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowAllDinnersActivity"
+            android:label=""
+            android:parentActivityName=".ShowAllDinnersActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.dinnerapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowRecipeActivity"
+            android:label=""
+            android:parentActivityName="com.example.android.dinnerapp.ShowRecipeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowDinnerActivity" />
+        </activity>
+
+        <activity
+            android:name=".OrderDinnerActivity"
+            android:label=""
+            android:parentActivityName=".OrderDinnerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowDinnerActivity" />
+        </activity>
+
+        <activity
+            android:name=".RemoveMealActivity"
+            android:label=""
+            android:parentActivityName="com.example.android.dinnerapp.RemoveMealActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowDinnerActivity" />
+        </activity>
+
+        <activity
+            android:name=".ShowDailySpecialActivity"
+            android:label=""
+            android:parentActivityName="com.example.android.dinnerapp.ShowDailySpecialActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

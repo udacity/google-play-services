@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:clickable="false"
+    android:id="@+id/scrollview_dinner_suggestion"
+    android:fillViewport="false">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/linear_layout_dinner_suggestion"
+            >
+    <fragment android:name="com.example.android.dinnerapp.UseInfoBoxFragment"
+        android:id="@+id/show_info_box"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout="@layout/show_info" />
+
+    <!-- Buttons below will be added and implemented by students -->
+
+    <Button style="@style/button_solid"
+        android:text="Add to cart"
+        android:id="@+id/add_to_cart_btn"
+        android:onClick="addDinnerToCart"
+     />
+
+    <Button style="@style/button_solid"
+        android:text="Start checkout"
+        android:id="@+id/start_checkout_btn"
+        android:onClick="startCheckout"
+        android:visibility="invisible"
+        />
+
+    <Button style="@style/button_solid"
+        android:text="Payment"
+        android:id="@+id/checkout_step_2_btn"
+        android:onClick="getPaymentInfo"
+        android:visibility="invisible"
+        />
+
+    <Button style="@style/button_solid"
+        android:text="Purchase"
+        android:id="@+id/purchase_btn"
+        android:onClick="purchaseCart"
+        android:visibility="invisible"
+        />
+<!--
+    <Button style="@style/button_solid"
+        android:text="Get refund"
+        />
+        -->
+
+</LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string-array name="vegetarian_meals">
+        <item>"01 Mushroom omelette and fried snow peas"</item>
+        <item>"02 Egg and tomato salad"</item>
+    </string-array>
+
+    <string-array name="vegan_meals">
+        <item>"03 Sweet corn and lentil soup"</item>
+        <item>"04 Tofu and coriander salad"</item>
+        <item>"05 Eggplant and apple lasagne"</item>
+    </string-array>
+
+    <string-array name="meat_meals">
+        <item>"06 Roast beef with yorkshire pudding"</item>
+        <item>"07 Chicken kebabs with french fries"</item>
+        <item>"08 Lamb curry with braised carrots"</item>
+    </string-array>
+
+    <string-array name="fish_meals">
+        <item>"09 Baked cod with miso sauce"</item>
+        <item>"10 Smoked salmon and brie salad"</item>
+        <item>"11 Crispy calamari with olives and grapes"</item>
+        <item>"12 Mussels with stir fried seaweed"</item>
+</string-array>
+
+</resources>
